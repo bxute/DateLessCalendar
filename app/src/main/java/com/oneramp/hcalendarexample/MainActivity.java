@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         CalendarDayModel calendarDayModel = CalendarDayModel.from(23,6,2019);
         HJCalenderView calendarView = findViewById(R.id.clcl);
+        //Streaks must be in pairs always.
+        //If there is only one day then it will be like {24,24}
         final int[][] streaks = {
          {1, 2},
          {4, 12}};
