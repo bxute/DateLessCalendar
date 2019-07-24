@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
          {1, 2},
          {4, 12}};
         calendarView.setStreakAdapter(new CalendarStreaksAdapter() {
+            //Return streak of current month
             @Override
             public int[][] getStreakForMonth(CalendarDayModel day) {
                 if (day.getMonth() == 7) {
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 return new int[0][];
             }
 
+            //Gets twice: 1. For previous month calendar
+            //            2. For Next month calendar
             @Override
             public void prefetchStreakForMonth(CalendarDayModel day) {
 
