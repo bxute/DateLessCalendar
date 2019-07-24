@@ -24,7 +24,7 @@ calendarView.setStreakAdapter(new CalendarStreaksAdapter() {
                 return new int[0][];
             }
             //This callback is for prefetching data for adjacent months.
-            //Gets twice: 1. For previous month calendar
+            //Gets called twice: 1. For previous month calendar
             //            2. For Next month calendar
             @Override
             public void prefetchStreakForMonth(CalendarDayModel day) {
