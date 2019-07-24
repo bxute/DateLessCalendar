@@ -1,5 +1,3 @@
 # DateLessCalendar
-![](https://github.com/bxute/DateLessCalendar/blob/master/device-2019-07-24-151208.png)
-![](https://github.com/bxute/DateLessCalendar/blob/master/device-2019-07-24-151239.png)
-![](https://github.com/bxute/DateLessCalendar/blob/master/device-2019-07-24-151245.png)
-![](https://github.com/bxute/DateLessCalendar/blob/master/device-2019-07-24-151254.png)
+<img src="https://github.com/bxute/DateLessCalendar/blob/master/device-2019-07-24-151208.png" height="640px" width="360px"/><img src="https://github.com/bxute/DateLessCalendar/blob/master/device-2019-07-24-151208.png" height="640px" width="360px"/><img src="https://github.com/bxute/DateLessCalendar/blob/master/device-2019-07-24-151239.png" height="640px" width="360px"/><img src="https://github.com/bxute/DateLessCalendar/blob/master/device-2019-07-24-151245.png" height="640px" width="360px"/>
+<img src="https://github.com/bxute/DateLessCalendar/blob/master/device-2019-07-24-151254.png" height="640px" width="360px"/>
