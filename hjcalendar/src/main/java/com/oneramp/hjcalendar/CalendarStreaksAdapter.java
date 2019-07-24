@@ -11,7 +11,7 @@
 package com.oneramp.hjcalendar;
 
 /**
- * Abstract class to be implemented by user of {@code CleanCalendarView}
+ * Abstract class to be implemented by user of {@code HJCalendarView}
  */
 public abstract class CalendarStreaksAdapter {
     public abstract int[][] getStreakForMonth(CalendarDayModel day);
