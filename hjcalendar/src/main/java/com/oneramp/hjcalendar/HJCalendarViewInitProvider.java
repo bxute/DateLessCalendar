@@ -15,7 +15,7 @@ import android.support.annotation.Nullable;
 
 import com.jakewharton.threetenabp.AndroidThreeTen;
 
-public class CleanCalendarViewInitProvider extends ContentProvider {
+public class HJCalendarViewInitProvider extends ContentProvider {
   public static final String Authority = "com.cleancalendar.viewinitprovider";
   @Override
   public boolean onCreate() {

@@ -7,7 +7,7 @@
     package="com.oneramp.hjcalendar">
     <application>
         <provider
-            android:name=".CleanCalendarViewInitProvider"
+            android:name=".HJCalendarViewInitProvider"
             android:authorities=".${applicationId}.viewinitprovider"
             android:enabled="true"
             android:exported="false" />
