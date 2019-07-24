@@ -6,7 +6,6 @@ package com.oneramp.hjcalendar;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
@@ -27,7 +26,7 @@ public class MonthView extends ViewGroup {
     private static final int NO_DATE_SELECTION = -11;
     private static final int DEFAULT_MAX_WEEKS_IN_A_MONTH = 6;
     private static String[] weeks = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
-    private static String[] dual_char = {"Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"};
+    private static String[] dual_char = {"Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"};
     private static String[] full_weeks = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
     private static String[] char_weeks = {"M", "T", "W", "T", "F", "S", "S"};
     private final Context mContext;
@@ -109,8 +108,8 @@ public class MonthView extends ViewGroup {
              null, false);
             view.setText(weekNames[i]);
             view.setTextSize(mCalendarConfig.getDayNameTextSize());
-            if (i == todaysWeekDay() && isCurrentMonth()) {
-                view.setTextColor(ContextCompat.getColor(getContext(),R.color.mustard));
+            if ((i + 1) == todaysWeekDay() && isCurrentMonth()) {
+                view.setTextColor(ContextCompat.getColor(getContext(), R.color.mustard));
             } else {
                 view.setTextColor(Color.BLACK);
             }
@@ -248,7 +247,7 @@ public class MonthView extends ViewGroup {
         int top = 0;
         int left = spaceOffset;
         int currentDayCol = 1;
-        boolean startDayLayout = false;
+        boolean startDayLayout = firstWeekDay == currentDayCol;
         for (int i = 1; i <= childCount; ) {
             View child = getChildAt(i - 1);
             if (child.getVisibility() == View.GONE)

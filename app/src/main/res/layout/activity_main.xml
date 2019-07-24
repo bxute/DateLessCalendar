@@ -13,9 +13,9 @@
     <com.oneramp.hjcalendar.HJCalenderView
         android:id="@+id/clcl"
         android:layout_width="0dp"
-        android:layout_height="360dp"
+        android:layout_height="wrap_content"
         app:cellSize="44dp"
-        app:showMonthBar="false"
+        app:showMonthBar="true"
         app:dayNameFormat="DUAL_CHAR"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

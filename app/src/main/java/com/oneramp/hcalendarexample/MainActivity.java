@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
         //app:showMonthBar="true"
         //If you need to hide it and show it on your own then set `showMonthBar` to false
         //And use the above callback to get current selected month,year.
-        calendarView.jumpToDate(calendarDayModel);
+        //calendarView.jumpToDate(calendarDayModel);
     }
 }
