@@ -161,14 +161,17 @@ public class HJCalenderView extends ViewGroup {
 
     public void setDayNameTextSize(int dayNameTextSize) {
         this.dayNameTextSize = dayNameTextSize;
+         initialize(mContext);
     }
 
     public void setDayLabelFormat(int dayLabelFormat) {
         this.dayLabelFormat = dayLabelFormat;
+         initialize(mContext);
     }
 
     public void setShowMonthBar(boolean showMonthBar) {
         this.showMonthBar = showMonthBar;
+         initialize(mContext);
     }
 
     public void setStreakAdapter(CalendarStreaksAdapter eventAdapter) {
