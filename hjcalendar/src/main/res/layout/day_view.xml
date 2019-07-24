@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Developer email: hiankit.work@gmail.com
+  ~ GitHub: https://github.com/bxute
+  -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="76dp"
+    android:layout_height="76dp">
+
+    <View
+        android:id="@+id/left_stripe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:background="#4DECBA00"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/icon"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <View
+        android:id="@+id/right_stripe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:background="#4DECBA00"
+        app:layout_constraintBottom_toBottomOf="@+id/icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/icon"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cir_solid_ffffff_stroke_cccccc_1_3"
+        android:padding="4dp"
+        android:src="@drawable/ic_tick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#ffffff" />
+
+</android.support.constraint.ConstraintLayout>

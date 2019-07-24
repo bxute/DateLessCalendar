@@ -1,0 +1,16 @@
+<!--
+  ~ Developer email: hiankit.work@gmail.com
+  ~ GitHub: https://github.com/bxute
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oneramp.hjcalendar">
+    <application>
+        <provider
+            android:name=".CleanCalendarViewInitProvider"
+            android:authorities=".${applicationId}.viewinitprovider"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+</manifest>
