@@ -115,7 +115,7 @@ public class HJCalenderView extends ViewGroup {
         monthViewAdapter.setCalendarCellConfig(new CalendarConfig((int) cellDimension,
          dayLabelFormat,
          dayNameTextSize));
-        monthViewAdapter.setEventAdapter(eventAdapter);
+        monthViewAdapter.setStreakAdapter(eventAdapter);
         View view = LayoutInflater.from(context).inflate(R.layout.calendar_top_bar,
          null, false);
         monthNameView = view.findViewById(R.id.month_name);
@@ -171,10 +171,10 @@ public class HJCalenderView extends ViewGroup {
         this.showMonthBar = showMonthBar;
     }
 
-    public void setEventAdapter(CalendarStreaksAdapter eventAdapter) {
+    public void setStreakAdapter(CalendarStreaksAdapter eventAdapter) {
         this.eventAdapter = eventAdapter;
         if (monthViewAdapter != null) {
-            monthViewAdapter.setEventAdapter(eventAdapter);
+            monthViewAdapter.setStreakAdapter(eventAdapter);
         }
     }
 

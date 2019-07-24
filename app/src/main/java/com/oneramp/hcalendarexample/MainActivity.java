@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         final int[][] streaks = {
          {1, 2},
          {4, 12}};
-        calendarView.setEventAdapter(new CalendarStreaksAdapter() {
+        calendarView.setStreakAdapter(new CalendarStreaksAdapter() {
             @Override
             public int[][] getStreakForMonth(CalendarDayModel day) {
                 if (day.getMonth() == 7) {

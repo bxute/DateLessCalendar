@@ -63,7 +63,7 @@ public class MonthViewAdapter extends PagerAdapter {
 //    }
   }
 
-  public void setEventAdapter(CalendarStreaksAdapter eventAdapter) {
+  public void setStreakAdapter(CalendarStreaksAdapter eventAdapter) {
     this.mEventAdapter = eventAdapter;
   }
 
