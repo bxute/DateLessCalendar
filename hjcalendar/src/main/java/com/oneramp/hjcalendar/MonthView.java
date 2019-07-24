@@ -114,12 +114,6 @@ public class MonthView extends ViewGroup {
             TextView view = (TextView) LayoutInflater.from(mContext).inflate(R.layout.week_name_label_view,
              null, false);
             view.setText(weekNames[i]);
-            if (mCalendarConfig.getDayNameTextStyle() == 0) {
-                //BOLD
-                view.setTypeface(null, Typeface.BOLD);
-            } else {
-                view.setTypeface(null, Typeface.NORMAL);
-            }
             view.setTextSize(mCalendarConfig.getDayNameTextSize());
             if (i == todaysWeekDay() && isCurrentMonth()) {
                 view.setTextColor(ContextCompat.getColor(getContext(),R.color.mustard));

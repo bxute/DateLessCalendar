@@ -17,8 +17,7 @@ public class MainActivity extends AppCompatActivity {
         HJCalenderView calendarView = findViewById(R.id.clcl);
         final int[][] streaks = {
          {1, 2},
-         {4, 12},
-         {24, 24}};
+         {4, 12}};
         calendarView.setEventAdapter(new CalendarStreaksAdapter() {
             @Override
             public int[][] getStreakForMonth(CalendarDayModel day) {

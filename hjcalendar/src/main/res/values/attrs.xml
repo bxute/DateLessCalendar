@@ -6,15 +6,7 @@
 <resources>
     <declare-styleable name="HJCalenderView">
         <attr name="cellSize" format="dimension" />
-        <attr name="dateTextSize" format="dimension" />
         <attr name="dayTextSize" format="dimension" />
-        <attr name="dayTextFontStyle" format="enum">
-            <enum name="BOLD" value="0" />
-            <enum name="NORMAL" value="1" />
-        </attr>
-        <attr name="dateTextColor" format="color" />
-        <attr name="eventIndicatorColor" format="color" />
-        <attr name="dateSelectionOutlineColor" format="color" />
         <attr name="dayNameFormat" format="enum">
             <enum name="FULL" value="0" />
             <enum name="MEDIUM" value="1" />
